@@ -16,5 +16,5 @@ export default function IndexRedirect() {
   if (isLoading || onboarded === null) return <Loader fullScreen />;
   if (!onboarded) return <Redirect href="/(onboarding)/welcome" />;
   if (!isAuthenticated) return <Redirect href="/(auth)/login" />;
-  return <Redirect href="/(tabs)/" />;
+  return <Redirect href="/(tabs)" />;
 }

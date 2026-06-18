@@ -31,7 +31,7 @@ export default function DashboardScreen() {
       uri={user?.avatar_url}
       name={user?.name ?? 'Developer'}
       size={32}
-      onImagePicked={() => router.push('/profile/')}
+      onImagePicked={() => router.push('/profile')}
     />
   );
 

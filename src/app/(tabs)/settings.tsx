@@ -33,7 +33,7 @@ export default function SettingsScreen() {
 
       <View style={styles.content}>
         {/* Profile Card */}
-        <Card style={styles.profileCard} onPress={() => router.push('/profile/')}>
+        <Card style={styles.profileCard} onPress={() => router.push('/profile')}>
           <Avatar uri={user?.avatar_url} name={user?.name ?? 'Builder'} size={56} />
           <View style={styles.profileInfo}>
             <Text style={[styles.profileName, { color: colors.foreground }]}>

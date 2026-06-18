@@ -29,7 +29,7 @@ export default function CheckoutScreen() {
       updateUser({ plan: plan.id });
       setLoading(false);
       showToast(`Welcome to ${plan.name}! Transaction completed.`, 'success');
-      router.replace('/(tabs)/');
+      router.replace('/(tabs)');
     }, 2000);
   };
 

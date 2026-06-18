@@ -30,7 +30,7 @@ export default function LoginScreen() {
   const onSubmit = async (data: LoginFormData) => {
     try {
       await login(data);
-      router.replace('/(tabs)/');
+      router.replace('/(tabs)');
     } catch (e) {
       showToast(
         e instanceof Error ? e.message : 'Login failed. Please try again.',
