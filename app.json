@@ -49,7 +49,9 @@
         {
           "photosPermission": "Allow LaunchPilot to access your photos."
         }
-      ]
+      ],
+      "expo-font",
+      "expo-splash-screen"
     ],
     "experiments": {
       "typedRoutes": true

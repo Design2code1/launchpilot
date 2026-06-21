@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.4.2",
     "@expo/vector-icons": "^15.0.2",
     "@hookform/resolvers": "^5.4.0",
     "@react-native-async-storage/async-storage": "2.2.0",
@@ -20,6 +21,7 @@
     "expo-linear-gradient": "~56.0.4",
     "expo-notifications": "~56.0.18",
     "expo-router": "~56.2.11",
+    "expo-splash-screen": "~56.0.10",
     "expo-status-bar": "~56.0.4",
     "moti": "^0.30.0",
     "nativewind": "^4.2.5",
@@ -31,7 +33,7 @@
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "4.25.2",
     "react-native-url-polyfill": "^3.0.0",
-    "react-native-worklets": "^0.9.2",
+    "react-native-worklets": "0.8.3",
     "zod": "^4.4.3",
     "zustand": "^5.0.14"
   },
@@ -43,8 +45,8 @@
   },
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios"
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "private": true
 }
