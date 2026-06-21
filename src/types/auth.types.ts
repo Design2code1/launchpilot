@@ -29,7 +29,7 @@ export interface SignupPayload {
   email: string;
   password: string;
   confirm_password: string;
-  accept_terms: boolean;
+  accept_terms?: boolean;
 }
 
 export interface ForgotPasswordPayload {
