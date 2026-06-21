@@ -6,12 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0F172A"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.launchpilot.rn",
@@ -51,7 +45,14 @@
         }
       ],
       "expo-font",
-      "expo-splash-screen"
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0F172A"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
@@ -59,3 +60,4 @@
     "scheme": "launchpilot"
   }
 }
+

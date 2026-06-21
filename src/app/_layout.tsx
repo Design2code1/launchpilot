@@ -30,10 +30,13 @@ export default function RootLayout() {
     Inter_700Bold,
   });
 
+  console.log('RootLayout Font Load State:', { loaded, error });
+
   useEffect(() => {
     initTheme();
     initAuth();
   }, []);
+
 
   useEffect(() => {
     if (loaded || error) {
@@ -55,8 +58,10 @@ export default function RootLayout() {
             <Stack.Screen name="(auth)" />
             <Stack.Screen name="(onboarding)" />
             <Stack.Screen name="(tabs)" />
-            <Stack.Screen name="profile" />
-            <Stack.Screen name="payments" />
+            <Stack.Screen name="profile/index" />
+            <Stack.Screen name="profile/edit" />
+            <Stack.Screen name="payments/plans" />
+            <Stack.Screen name="payments/checkout" />
           </Stack>
         </ToastProvider>
       </SafeAreaProvider>
